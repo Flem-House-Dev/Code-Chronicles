@@ -1,6 +1,6 @@
 const User = require('./User');
-const Blog_category = require('./Blog_category');
-const BLog_article = require('./Blog_Article');
+const Blog_category = require('./Category');
+const BLog_article = require('./Blog');
 
 Blog_category.hasMany(BLog_article, {
   foreignKey: 'category_id',
