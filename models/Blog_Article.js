@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Painting extends Model {}
+class BLog_article extends Model {}
 
-Painting.init(
+BLog_article.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -15,26 +15,23 @@ Painting.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    artist: {
+    // ToDo: Connect the blog author to the username of the logged in user.
+    author: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    exhibition_date: {
+    post_date: {
       type: DataTypes.DATE,
       allowNull: false,
     },
-    filename: {
+    text_body: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    gallery_id: {
+    category_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'gallery',
+        model: 'blog_category',
         key: 'id',
       },
     },
@@ -43,8 +40,8 @@ Painting.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'painting',
+    modelName: 'blog_article',
   }
 );
 
-module.exports = Painting;
+module.exports = BLog_article;
