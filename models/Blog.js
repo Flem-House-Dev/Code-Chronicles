@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class BLog_article extends Model {}
+class BLog extends Model {}
 
-BLog_article.init(
+BLog.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -22,7 +22,7 @@ BLog_article.init(
     },
     post_date: {
       type: DataTypes.DATE,
-      allowNull: false,
+      // allowNull: false,
     },
     text_body: {
       type: DataTypes.STRING,
@@ -31,7 +31,7 @@ BLog_article.init(
     category_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'blog_category',
+        model: 'category',
         key: 'id',
       },
     },
@@ -40,8 +40,8 @@ BLog_article.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'blog_article',
+    modelName: 'blog',
   }
 );
 
-module.exports = BLog_article;
+module.exports = BLog;
