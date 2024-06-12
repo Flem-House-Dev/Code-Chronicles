@@ -1,0 +1,10 @@
+<section class="container">
+  <h3 class="gallery-name">{{category.name}}</h3>
+  <h4>Posted on: {{format_time category.post_date}}</h4>
+  
+  <section class="flex-row justify-center">
+    {{#each category.blogs as |blog|}}
+    {{> blog-cards}}
+    {{/each}}
+  </section>
+</section>

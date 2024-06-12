@@ -2,16 +2,16 @@ const { Category } = require('../models');
 
 const categorydata = [
   {
-    title: 'Printemps',
+    title: 'HTML',
   },
   {
-    title: 'Sommer',
+    title: 'JavaScript',
   },
   {
-    title: 'Herfst',
+    title: 'CSS',
   },
   {
-    title: 'Invierno',
+    title: 'Node.js',
   },
 ];
 
