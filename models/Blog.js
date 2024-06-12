@@ -22,7 +22,7 @@ BLog.init(
     },
     post_date: {
       type: DataTypes.DATE,
-      // allowNull: false,
+      allowNull: false,
     },
     text_body: {
       type: DataTypes.STRING,
