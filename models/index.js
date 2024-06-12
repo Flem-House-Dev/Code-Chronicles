@@ -1,13 +1,13 @@
 const User = require('./User');
-const Blog_category = require('./Category');
-const BLog_article = require('./Blog');
+const Category = require('./Category');
+const Blog = require('./Blog');
 
-Blog_category.hasMany(BLog_article, {
+Category.hasMany(Blog, {
   foreignKey: 'category_id',
 });
 
-BLog_article.belongsTo(Blog_category, {
+Blog.belongsTo(Category, {
   foreignKey: 'category_id',
 });
 
-module.exports = { User, Blog_category, BLog_article };
+module.exports = { User, Category, Blog };
