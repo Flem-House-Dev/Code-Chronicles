@@ -2,72 +2,72 @@ const { Blog } = require('../models');
 
 const blogdata = [
   {
-    title: 'Blossoming Apricot',
+    title: 'Working with headers',
     author: 'LedyX',
     post_date: 'March 30, 2018',
     category_id: 1,
     text_body:
-      'Branches with pink apricot blossoms against a blue background.',
+      'Headers are a great way to show hierarchy in the text content. ',
   },
   {
-    title: 'Cosmos Flowers',
+    title: 'Importing Stylesheets',
     author: 'WStudio',
     post_date: 'May 05, 2017',
     category_id: 1,
-    text_body: 'Pink cosmos flowers against a blue sky.',
+    text_body: 'Stylesheets can be imported in the head section of the HTML document.',
   },
   {
-    title: 'Sand + Sea = Summer',
+    title: 'Data Types',
     author: 'S_Photo',
     post_date: 'June 10, 2019',
     category_id: 2,
-    text_body: 'Sandy beach with the blue sea and sky in the background.',
+    text_body: 'When working with JavaScript, it is important to understand the different datatypes: string, number, boolean, undefined, null, and object are some of the primitive data types that a user would work with.',
   },
   {
-    title: 'Beach Chairs',
+    title: 'Working With Arrays',
     author: 'icemanphotos',
     post_date: 'July 4, 2020',
     category_id: 2,
-    text_body: 'Two beach chairs under a beach umbrella on the beach.',
+    text_body: 'When working with arrays, always wrap the array with square brackets [].',
   },
   {
-    title: 'Beach Sunrise',
+    title: 'Introduction to Functions',
     author: 'VRstudio',
     post_date: 'August 14, 2016',
     category_id: 2,
-    text_body: 'Sun setting in the horizon with waves lapping the shore.',
+    text_body: 'Functions in JavaScript are incredibly useful. They are where we program the logic itself to make things happen.',
   },
   {
-    title: 'Fall Colors',
+    title: 'CSS Colors',
     author: 'DrivingJack',
     post_date: 'October 15, 2018',
     category_id: 3,
     text_body:
-      'Trees with red, orange, yellow leaves reflected on a still lake.',
+      'In CSS, there are a few ways to define colors. One way is to use the color name itself. Another is to define a color with a hex code.',
   },
   {
-    title: 'Autumn Mountains',
+    title: 'Borders',
     author: 'Vitalii_Mamchuk',
     post_date: 'November 3, 2016',
     category_id: 3,
     text_body:
-      'Mountains with red and yellow leaves against a background of hazy rolling hills.',
+      'Borders are a great way to add some definition to the look of an html document. They can be adjusted to have a certain width or color.',
   },
   {
-    title: 'Frozen River',
+    title: 'What is Node.js?',
     author: 'Vlad Sokolovsky',
     post_date: 'December 24, 2020',
     category_id: 4,
     text_body:
-      'Trees with white frozen branches reflected on a frozen river against a light pink sky.',
+      'Whereas JavaScript was originally designed to be used on the client\'s browser, Node.js works on the server side to handle logic and functionality on the back-end.',
   },
   {
-    title: 'Winter Home',
+    title: 'NPM Packages',
     author: 'Smit',
     post_date: 'January 20, 2018',
     category_id: 4,
     text_body:
-      'Log cabin blanketed in heavy white snow with tall snow covered pine trees in the background.',
+      'NPM packages can be thought of as mini "apps" whereas the NPM (Node Package Manager) can be thought of as an "app store". ',
   },
 ];
 
