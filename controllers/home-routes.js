@@ -36,7 +36,7 @@ router.get('/category/:id', withAuth, async (req, res) => {
       include: [
         {
           model: Blog,
-          attributes: ['id', 'title', 'author', 'publish_date', 'filename', 'description'],
+          attributes: ['id', 'title', 'author', 'post_date', 'text_body'],
         },
       ],
     });
