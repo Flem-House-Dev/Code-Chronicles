@@ -35,6 +35,9 @@ header {
   /* Apply the gradient background directly */
   background: linear-gradient(to right, #0271ac, #003c5a);
   color: var(--light);
+  height: 60px;
+  font-size: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 main {
@@ -49,6 +52,7 @@ aside {
   padding: 80px;
   text-align: left;
   color: var(--light);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 nav {
@@ -111,12 +115,19 @@ img {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
+  border: 7px double;
+  border-radius: 20px;
+  border-width: 10px;
 }
 
 .painting-details {
   text-align: center;
   padding: 10px 20px;
   font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #0271ac, #003c5a);
+  
+  background-color: var(--light);
 }
 
 /* CARDS */
