@@ -4,31 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
+  <title>Code Chronicles</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to the Four Seasons Museum</h1>
+  <header >
+    <h1 class="codeChronicles">Code Chronicles</h1>
   </header>
   <nav>
     <a href="/">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
-    <a href="/blog_form">Post New BLog</a>
+    <a href="/blog_form">Post New Blog</a>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
   </nav>
   <main>
     <aside>
-      <h2>Enjoy the galleries!</h2>
+      <h2>Expand your coding knowledge with Code Chronicles!</h2>
     </aside>
     <div class="gallery">
-      {{{body}}}
+      {{!-- <div class="content"> --}}
+         {{{body}}}
+      {{!-- </div> --}}
     </div>
+     <div class="logo"></div>
   </main>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
