@@ -1,4 +1,5 @@
-const { response } = require("express");
+// const { response } = require("express");
+console.log("blog_form.js is running...");
 
 
 const blogFormSubmitHandler = async (event) => {
@@ -15,7 +16,7 @@ const blogFormSubmitHandler = async (event) => {
     };
 
     try {
-        const response = await fetch('/api/blog', {
+        const response = await fetch('/api/blog_form', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -34,41 +35,6 @@ const blogFormSubmitHandler = async (event) => {
     } catch (err) {
         console.error('Error:', err);
     };
-
-    // const title = document.querySelector('#title').value.trim();
-    // const author = document.querySelector('#author').value.trim();
-    // const text_body = document.querySelector('#content').value.trim();
-    // const category = document.querySelector('#category').value();
-
-    // let category_id;
-
-    // switch (category) {
-    //     case 'HTML':
-    //         category_id = 1;
-    //         break;
-    //     case 'JavaScript':
-    //         category_id = 2;
-    //         break;
-    //     case 'CSS':
-    //         category_id = 3;
-    //     case 'Node.js':
-    //         category_id = 4;
-    //         break;
-    // };
-
-//     if (title && text_body) {
-//         const response = await fetch('/api/blog_form', {
-//             method: 'POST',
-//             body: JSON.stringify({title, author, text_body, category_id }),
-//             headers: { 'Content-Type': 'application/json' },
-//         });
-
-//         if (response.ok) {
-//             document.location.replace('/');
-//         } else {
-//             alert('Failed to save blog post.');
-//         }
-//     }
 };
 
 document
