@@ -33,11 +33,11 @@ header {
   padding: 40px;
   text-align: center;
   /* Apply the gradient background directly */
-  background: linear-gradient(to right, #0271ac, #003c5a);
+  background: linear-gradient(to right, #0271ac, #002f47);
   color: var(--light);
   height: 60px;
   font-size: 40px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 main {
@@ -52,7 +52,8 @@ aside {
   padding: 80px;
   text-align: left;
   color: var(--light);
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
 }
 
 nav {
@@ -187,4 +188,27 @@ img {
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+}
+
+.codeChronicles {
+  font-size: 60px;
+  position: relative;
+  bottom: 40px;
+}
+
+.logo {
+  background-image:url('../images/Coding-Logo.png');
+  justify-content: center;
+}
+
+#blogForm {
+  color: #ffffff;
+  background: linear-gradient(to right, #0271ac, #003c5a);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  border-color: #002438;
+  border-width: 5px;
+  width: 600px;
+  height: 400px;
 }
