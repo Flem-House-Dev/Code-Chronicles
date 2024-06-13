@@ -20,7 +20,7 @@ const blogFormSubmitHandler = async (event) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(blogData);
+            body: JSON.stringify(blogData)
         });
 
         if(response.ok) {
