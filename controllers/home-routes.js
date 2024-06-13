@@ -28,6 +28,17 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/blog_form', async (req, res) => {
+  try {
+    res.render('blog_form', {
+      loggedIn: req.session.loggedIn,
+    })
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 // GET one category
 // Replacing the logic with the custom middleware
 router.get('/category/:id', withAuth, async (req, res) => {
