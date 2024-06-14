@@ -85,6 +85,9 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(5px);
+  position: relative;
+
+
   /* height: 100%; */
   /* width: 100%; */
 }
@@ -196,9 +199,11 @@ img {
   bottom: 40px;
 }
 
-.logo {
-  background-image:url('../images/Coding-Logo.png');
+#logo {
+  background-image:url('../images/Coding-Logo.jpg');
   justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 
 #blogForm {
@@ -211,4 +216,21 @@ img {
   border-width: 5px;
   width: 600px;
   height: 400px;
+}
+
+/* Example for centering content inside */
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */ /* Adjust as needed */
+  height: 70px;
+  width: 70px; /* Adjust as needed */
+  background-image: url('../images/Coding-Logo.png'); /* Correct path */
+  background-size: 100px; /* Or cover, depending on your needs */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  bottom: 120px;
+  right: 40px;
+  
 }
