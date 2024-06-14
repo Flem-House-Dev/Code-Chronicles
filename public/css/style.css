@@ -132,6 +132,8 @@ img {
   border: 7px double;
   border-radius: 20px;
   border-width: 10px;
+  position: relative;
+  left: 300px;
 }
 
 .painting-details {
@@ -140,7 +142,7 @@ img {
   font-weight: bold;
   color: white;
   background: linear-gradient(to right, #0271ac, #003c5a);
-  
+  position: relative;
   background-color: var(--light);
 }
 
