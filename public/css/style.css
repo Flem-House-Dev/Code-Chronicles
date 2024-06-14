@@ -250,6 +250,9 @@ img {
   border-width: 5px;
   width: 600px;
   height: 400px;
+  position: relative;
+  left: 400px;
+  top: 100px;
 }
 
 /* Example for centering content inside */
