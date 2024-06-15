@@ -86,6 +86,11 @@ router.get('/blog/:id', withAuth, async (req, res) => {
   }
 });
 
+// ---------------------------------------
+
+
+
+// ---------------------------------------
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');

@@ -6,5 +6,8 @@
     <p>{{blog.text_body}}</p>
 
     <p>Posted on: {{ format_date blog.post_date}}</p>
+    <button id="delete" data-blog-id="{{blog.id}}" class="btn btn-danger">Delete</button>
   </div>
 </section>
+
+<script src="/js/blog_page.js"></script>
