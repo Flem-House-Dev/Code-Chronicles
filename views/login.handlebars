@@ -1,11 +1,37 @@
 {{!-- <div class="reveal" id="login-card1"></div> --}}
 
+{{!-- <div class="row justify-space-between-md"> --}}
 <div class="row justify-space-between-md">
-  <p><a class="button" data-open="login-card1">Login</a></p>
 
-<div class="reveal" id="login-card1" data-reveal>
-  <div class="login-card">
-    <h2 class="page-title">Login</h2>
+  <div class="tiny reveal login-card" id="login-card1" data-reveal>
+    {{!-- <div class="card login-card"> --}}
+      
+        <h2 class="page-title">Signup</h2>
+
+
+      <form class="form signup-form">
+        <div class="form-group">
+          <label for="username-signup">Username:</label>
+          <input class="form-input" type="text" id="username-signup" />
+        </div>
+        <div class="form-group">
+          <label for="email-signup">Email:</label>
+          <input class="form-input" type="text" id="email-signup" />
+        </div>
+        <div class="form-group">
+          <label for="password-signup">Password:</label>
+          <input class="form-input" type="password" id="password-signup" />
+        </div>
+        <div class="form-group">
+          <button class="button secondary" type="submit">signup</button>
+
+        </div>
+      </form>
+    {{!-- </div> --}}
+  </div>
+
+  <div class="card login-card">
+      <h2 class="page-title">Login</h2>
     <form class="form login-form">
       <div class="form-group">
         <label for="email-login">Email:</label>
@@ -16,32 +42,13 @@
         <input class="form-input" type="password" id="password-login" />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
+        <button class="button primary" type="submit">login</button>
+        <button class="button secondary" data-open="login-card1">New User?</button>
       </div>
     </form>
-  </div>
   </div>
 
-  <div class="login-card">
-    <h2 class="page-title">Signup</h2>
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="username-signup">Username:</label>
-        <input class="form-input" type="text" id="username-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">Email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="button secondary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
+
 </div>
 
 <script src="./js/login.js"></script>
