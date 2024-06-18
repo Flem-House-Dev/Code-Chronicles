@@ -15,9 +15,9 @@ body {
   min-height: 100vh;
   justify-content: flex-start;
   /* background-color: var(--quatrinary); */
-  background-image: url("https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700");
-  background-size: cover;
-  background-position: center;
+  background-image: url("https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700") !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 a {
@@ -30,12 +30,13 @@ a:visited {
 }
 
 header {
-  padding: 40px;
+  padding: 5px;
   text-align: center;
   /* Apply the gradient background directly */
   background: linear-gradient(to right, #0271ac, #002f47);
   color: var(--light);
-  height: 60px;
+  height: auto;
+  width: 100%;
   font-size: 40px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -49,20 +50,17 @@ main {
 aside {
   flex: 0;
   background: linear-gradient(to right, #0271ac, #003c5a);
-  padding: 80px;
+  padding: 20px;
   text-align: left;
   color: var(--light);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  width: 200px;
+  width: auto;
   border-style: solid;
   border-color: black;
 }
 
 .asideText {
   justify-content: center;
-  position: relative;
-  right:65px;
-  bottom: 50px
 }
 
 nav {
@@ -174,8 +172,8 @@ img {
   margin-bottom: 50px;
   width: 400px;
   justify-content: center;
-  position:relative;
-  left: 500px
+  /* position:relative;
+  left: 500px */
 }
 
 .login-card {
@@ -231,8 +229,8 @@ img {
 
 .codeChronicles {
   font-size: 60px;
-  position: relative;
-  bottom: 40px;
+  /* position: relative;
+  bottom: 40px; */
 }
 
 #logo {
@@ -268,9 +266,9 @@ img {
   background-size: 100px; /* Or cover, depending on your needs */
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  /* position: relative;
   bottom: 120px;
-  right: 40px;
+  right: 40px; */
   
 }
 
