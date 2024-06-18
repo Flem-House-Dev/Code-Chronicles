@@ -121,6 +121,18 @@ aside {
   height: auto;
 }
 
+.aside-container-for-mobile {
+  width: 100%;
+  background: linear-gradient(to right, #0271ac, #003c5a);
+  padding: 5px;
+  text-align: center;
+  color: var(--light);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-style: solid;
+  border-color: black;
+  height: auto;
+}
+
 .asideText {
   justify-content: center;
 }
@@ -263,6 +275,7 @@ nav a:hover {
   margin: 50px;
   padding: 20px;
 }
+
 
 
 
