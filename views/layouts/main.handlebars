@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Chronicles</title>
   {{!-- <link rel="stylesheet" type="text/css" href="/css/jass.css"> --}}
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-</head>
 
 <body>
   <header >
@@ -17,6 +17,7 @@
       <div class="logo-container"></div>
   </div>
   </header>
+  
   <nav>
     <a href="/">Home</a>
     {{#if loggedIn}}
@@ -26,23 +27,29 @@
     <a href="/login">Login</a>
     {{/if}}
   </nav>
+
   <main>
     <aside>
       <h2 class="asideText">Expand your coding knowledge with Code Chronicles!</h2>
-      
     </aside>
+
     <div class="gallery">
       {{!-- <div class="content"> --}}
+        
          {{{body}}}
       {{!-- </div> --}}
+          
     </div>
   </main>
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
   
+
 </body>
+
 
 </html>
