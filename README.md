@@ -16,24 +16,28 @@
   ### Viewing Blog Articles
   To use Code Chronicles users must either log in or create an account. 
 
-  ![Login-screen](./assets/login_screen.PNG)
+  ![Login-screen](./assets/login_screen.jpg)
 
   Once logged in, the home screen will show various topics of web developement. 
 
-  ![Categories](./assets/Categories_screen.PNG)
+  ![Categories](./assets/Categories_screen.jpg)
 
   From here, the user can choose a category by clicking on one of the category cards. The screen will then show the blog article cards under that category.
   
-  ![Blog-article-cards](./assets/Blog_cards.PNG)
+  ![Blog-article-cards](./assets/Blog_cards.jpg)
 
   Click one of the blog article cards to read it.
 
-  ![Blog-article](./assets/Blog_article.PNG)
+  ![Blog-article](./assets/Blog_article.jpg)
 
   ### Creating a New Blog
 
   To create a blog, Click "Post New BLog" in the top navigation menu.
-  ![Post]
+
+  ![Post a New Blog](./assets/Post_new_blog.jpg)
+
+  The user will fill out the form with a blog title, author name, selected category, and article content. After clicking the submit button, the article will be visible in its category page.
+  
   ## License
   This software uses the MIT License.
   ## Questions
