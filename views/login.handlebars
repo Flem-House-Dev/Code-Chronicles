@@ -1,12 +1,10 @@
-{{!-- <div class="reveal" id="login-card1"></div> --}}
+<div class="container">
 
-{{!-- <div class="row justify-space-between-md"> --}}
-<div class="row justify-space-between-md">
+  <div class="row justify-space-between-md">
 
-  <div class="tiny reveal login-card" id="login-card1" data-reveal>
-    {{!-- <div class="card login-card"> --}}
-      
-        <h2 class="page-title">Signup</h2>
+    <div class="tiny reveal login-card" id="login-card1" data-reveal>
+
+      <h2 class="page-title">Signup</h2>
 
 
       <form class="form signup-form">
@@ -27,28 +25,29 @@
 
         </div>
       </form>
-    {{!-- </div> --}}
-  </div>
 
-  <div class="card login-card">
+    </div>
+
+    <div class="card login-card">
       <h2 class="page-title">Login</h2>
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">Email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">Password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="button primary" type="submit">login</button>
-        <button class="button secondary" data-open="login-card1">New User?</button>
-      </div>
-    </form>
+      <form class="form login-form">
+        <div class="form-group">
+          <label for="email-login">Email:</label>
+          <input class="form-input" type="text" id="email-login" />
+        </div>
+        <div class="form-group">
+          <label for="password-login">Password:</label>
+          <input class="form-input" type="password" id="password-login" />
+        </div>
+        <div class="form-group">
+          <button class="button primary" type="submit">login</button>
+          <button class="button secondary" data-open="login-card1">New User?</button>
+        </div>
+      </form>
+    </div>
+
+
   </div>
-
-
 </div>
 
 <script src="./js/login.js"></script>
