@@ -228,9 +228,12 @@ img {
 }
 
 .codeChronicles {
-  font-size: 60px;
+  font-size: 100px;
   /* position: relative;
   bottom: 40px; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 #logo {
@@ -276,6 +279,7 @@ img {
   background: linear-gradient(to right, #0271ac, #003c5a);
 }
 
-.galary-name {
-
+.header2 {
+  padding: 1px;
+  background-color: #c2e6f2;
 }
