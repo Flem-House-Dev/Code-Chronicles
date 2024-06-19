@@ -7,6 +7,7 @@
   --border-radius: 0.3rem;
 }
 
+/* -------- Element styles -------- */
 body {
   font-family: Arial;
   margin: 0;
@@ -14,7 +15,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  /* background-color: var(--quatrinary); */
   background-image: url("https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700") !important;
   background-size: cover !important;
   background-position: center !important;
@@ -29,10 +29,52 @@ a:visited {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------- Main view styles -------- */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+.content {
+  flex: 4;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+
+/* ---- Header section ---- */
+
 header {
   padding: 5px;
   text-align: center;
-  /* Apply the gradient background directly */
   background: linear-gradient(to right, #0271ac, #002f47);
   color: var(--light);
   height: auto;
@@ -41,11 +83,30 @@ header {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
+.main-header-text {
+  font-size: 60px;
 }
+
+#logo {
+  background-image:url('../images/Coding-Logo.jpg');
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  background-image: url('../images/Coding-Logo.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ---- Aside section ---- */
 
 aside {
   flex: 0;
@@ -57,11 +118,26 @@ aside {
   width: auto;
   border-style: solid;
   border-color: black;
+  height: auto;
+}
+
+.aside-container-for-mobile {
+  width: 100%;
+  background: linear-gradient(to right, #0271ac, #003c5a);
+  padding: 5px;
+  text-align: center;
+  color: var(--light);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-style: solid;
+  border-color: black;
+  height: auto;
 }
 
 .asideText {
   justify-content: center;
 }
+
+/* ---- Navbar section ---- */
 
 nav {
   display: flex;
@@ -80,71 +156,8 @@ nav a:hover {
   background-color: var(--dark);
 }
 
-/* background */
-.gallery {
-  flex: 4;
-  /* background-image: url("https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700");
-  background-size: cover;
-  background-position: center; */
-  padding: 50px;
-  /* display: flex; */
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(5px);
-  position: relative;
- 
+/* -------- Cards -------- */
 
-
-  /* height: 100%; */
-  /* width: 100%; */
-}
-
-/* .content {
-  backdrop-filter: blur(10px);
-  height: 100%;
-  width: auto;
-} */
-
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 100%;
-  transition: color 0.1s;
-  margin-left: 16px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.painting {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  border: 7px double;
-  border-radius: 20px;
-  border-width: 10px;
-  position: relative;
-  left: 300px;
-}
-
-.painting-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(to right, #0271ac, #003c5a);
-  position: relative;
-  background-color: var(--light);
-}
-
-/* CARDS */
 .card {
   margin: 20px;
   flex: 0 1 300px;
@@ -155,41 +168,10 @@ img {
   z-index: 2;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 400px;
+  /* width: 400px; */
+  width: auto;
   justify-content: center;
   position:relative;
-}
-
-.card-topics {
-  margin: 20px;
-  flex: 0 1 300px;
-  border: 7px double var(--dark);
-  border-radius: 10px;
-  background-color: var(--light);
-  color: var(--dark);
-  z-index: 2;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 400px;
-  justify-content: center;
-  /* position:relative;
-  left: 500px */
-}
-
-.login-card {
-  margin: 0 0 20px 0;
-  margin-right: 20px;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 5px;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
-  border-style: double;
-  border-width: thick;
-  background-color: #e18206;
-  color: var(--light);
-  position: relative;
-  left: 400px
 }
 
 .card header {
@@ -208,24 +190,78 @@ img {
   font-weight: bold;
 }
 
-.gallery-name {
+/* -------- Blog page styles -------- */
+
+.blog {
+  width: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border: 7px double;
+  border-radius: 20px;
+  border-width: 10px;
+  flex: 0 1 200px;
+}
+
+.blog-details {
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #0271ac, #003c5a);
+  position: relative;
+  background-color: var(--light);
+}
+
+.category-title {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px var(--secondary);
-  border: 10px groove var(--light);
+  border: 3px solid var(--light);
+  border-radius: var(--border-radius);
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 100px;
   padding-left: 100px;
+  color: var(--light);
+  background: linear-gradient(to right, #0271ac, #003c5a);
+  height: auto;
 }
 
-/* LAYOUT */
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: center;
+/* -------- Categories page -------- */
+
+.card-topics {
+  margin: 20px;
+  flex: 0 1 300px;
+  border: 7px double var(--dark);
+  border-radius: 10px;
+  background-color: var(--light);
+  color: var(--dark);
+  z-index: 2;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 400px;
+  justify-content: center;
 }
+
+/* -------- Login page -------- */
+
+.login-card {
+  margin: 20px;
+
+  margin-right: 20px;
+  flex: 0 0 50%;
+  padding: 10px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+  border-style: double;
+  border-width: thick;
+  background-color: #e18206;
+  color: var(--light);
+  position: relative;
+  background: linear-gradient(to right, #0271ac, #003c5a);
+}
+
 
 .codeChronicles {
   font-size: 100px;
@@ -243,6 +279,9 @@ img {
   background-position: center;
 }
 
+/* -------- Blog form page -------- */
+
+
 #blogForm {
   color: #ffffff;
   background: linear-gradient(to right, #0271ac, #003c5a);
@@ -251,33 +290,12 @@ img {
   background-color: white;
   border-color: #002438;
   border-width: 5px;
-  width: 600px;
-  height: 400px;
-  position: relative;
-  left: 400px;
-  top: 100px;
+  margin: 50px;
+  padding: 20px;
 }
 
-/* Example for centering content inside */
-.logo-container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */ /* Adjust as needed */
-  height: 70px;
-  width: 70px; /* Adjust as needed */
-  background-image: url('../images/Coding-Logo.png'); /* Correct path */
-  background-size: 100px; /* Or cover, depending on your needs */
-  background-repeat: no-repeat;
-  background-position: center;
-  /* position: relative;
-  bottom: 120px;
-  right: 40px; */
-  
-}
 
-.login-card {
-  background: linear-gradient(to right, #0271ac, #003c5a);
-}
+
 
 .header2 {
   padding: 1px;
