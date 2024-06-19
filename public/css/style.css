@@ -262,7 +262,25 @@ nav a:hover {
   background: linear-gradient(to right, #0271ac, #003c5a);
 }
 
+
+.codeChronicles {
+  font-size: 100px;
+  /* position: relative;
+  bottom: 40px; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#logo {
+  background-image:url('../images/Coding-Logo.jpg');
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
 /* -------- Blog form page -------- */
+
 
 #blogForm {
   color: #ffffff;
@@ -279,3 +297,7 @@ nav a:hover {
 
 
 
+.header2 {
+  padding: 1px;
+  background-color: #c2e6f2;
+}
