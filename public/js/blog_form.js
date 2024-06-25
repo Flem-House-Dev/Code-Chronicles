@@ -27,7 +27,7 @@ const blogFormSubmitHandler = async (event) => {
         if(response.ok) {
             const result = await response.json();
             console.log('Blog post created', result);
-            blogForm.reset();
+            window.location.href = '/';
         }
         else {
             console.error('Error creating blog post', response.statusText);
