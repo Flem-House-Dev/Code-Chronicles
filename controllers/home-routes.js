@@ -28,6 +28,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// Go to blog form screen
 router.get('/blog_form', async (req, res) => {
   try {
     res.render('blog_form', {
@@ -86,11 +87,7 @@ router.get('/blog/:id', withAuth, async (req, res) => {
   }
 });
 
-// ---------------------------------------
-
-
-
-// ---------------------------------------
+// To login screen
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');

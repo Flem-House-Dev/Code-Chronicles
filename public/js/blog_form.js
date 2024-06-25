@@ -1,7 +1,7 @@
 // const { response } = require("express");
 console.log("blog_form.js is running...");
 
-
+// Function for handling blog form submit
 const blogFormSubmitHandler = async (event) => {
     event.preventDefault();
 
@@ -37,6 +37,7 @@ const blogFormSubmitHandler = async (event) => {
     };
 };
 
+// Event handler for blog form submit button
 document
     .querySelector('.blog-post-form')
     .addEventListener('submit', blogFormSubmitHandler);
