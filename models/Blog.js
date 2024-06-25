@@ -15,7 +15,6 @@ BLog.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // ToDo: Connect the blog author to the username of the logged in user.
     author: {
       type: DataTypes.STRING,
       allowNull: false,

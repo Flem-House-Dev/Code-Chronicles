@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Blog } = require('../../models');
 
+// Select blog category from drop-down
 function getCategoryId (category) {
     switch(category) {
         case 'HTML':
@@ -16,6 +17,7 @@ function getCategoryId (category) {
     }
 }
 
+// Get blog form
 router.post('/', async (req, res) => {
     try {
         const { title, author, text_body, category } = req.body;

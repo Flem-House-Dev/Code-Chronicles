@@ -1,5 +1,6 @@
 console.log("blog_page.js is running...");
 
+// Handler function for deleting a post
 const deletePostHandler = async (id) => {
     try {
         const response = await fetch(`/api/blog_delete/${id}`, {
@@ -16,6 +17,7 @@ const deletePostHandler = async (id) => {
     }
 };
 
+// Event listener for delete post button
 document.getElementById('delete').addEventListener('click',
     (event) => {
         console.log(event.target);
